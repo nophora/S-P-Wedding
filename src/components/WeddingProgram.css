@@ -20,11 +20,19 @@
 }
 
 .wedding-title {
-    font-size: 2.0rem;
+    font-size: 2.5rem;
     font-weight: 400;
     margin-bottom: 0.5rem;
     font-style: italic;
     letter-spacing: 1px;
+}
+
+/* Add this right below it */
+@media (max-width: 600px) {
+    .wedding-title {
+        font-size: 1.8rem;
+        /* Adjust this number if it still wraps */
+    }
 }
 
 .wedding-date {
