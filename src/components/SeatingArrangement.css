@@ -1,0 +1,114 @@
+.seating-container {
+    min-height: 100vh;
+    background-color: #F8F5F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1.5rem;
+    font-family: "Playfair Display", "Georgia", serif;
+    color: #4A5336;
+}
+
+.seating-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.seating-title {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.seating-subtitle {
+    font-size: 1rem;
+    color: #8C7853;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.seating-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    /* Kept slightly narrower so it reads well on desktop too */
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.seating-image-wrapper {
+    background: #ffffff;
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+}
+
+.seating-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+/* 1. Ensure the footer strictly stacks the buttons with space */
+.seating-footer {
+    text-align: center;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    /* This guarantees space between them */
+}
+
+/* 2. Group both buttons together to share sizing rules */
+.premium-button,
+.premium-button-outline {
+    width: 100%;
+    max-width: 350px;
+    /* Forces BOTH buttons to be exactly this wide */
+    box-sizing: border-box;
+    /* Prevents padding from changing the width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* 3. Specific colors for the filled Download button */
+.premium-button {
+    background-color: #4A5336;
+    color: #ffffff;
+    border: 1px solid #4A5336;
+    box-shadow: 0 4px 15px rgba(74, 83, 54, 0.2);
+}
+
+.premium-button:hover {
+    background-color: #ffffff;
+    color: #4A5336;
+    box-shadow: 0 6px 20px rgba(74, 83, 54, 0.3);
+    transform: translateY(-2px);
+}
+
+/* 4. Specific colors for the outline Back button */
+.premium-button-outline {
+    background-color: transparent;
+    color: #4A5336;
+    border: 1px solid #4A5336;
+}
+
+.premium-button-outline:hover {
+    background-color: #4A5336;
+    color: #ffffff;
+}
