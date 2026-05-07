@@ -3,6 +3,7 @@ import WeddingProgram from './components/WeddingProgram'
 import SeatingArrangement from './components/SeatingArrangement'
 import './index.css'
 
+
 function App() {
   // State to track which page we are viewing: 'program' or 'seating'
   const [currentPage, setCurrentPage] = useState('program');
