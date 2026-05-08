@@ -8,7 +8,7 @@ import seatingPart2 from '../assets/seating-2.png'; // Tables 7-12
 import seatingPart3 from '../assets/seating-3.png'; // Tables 13-16
 
 // Import the full image specifically for the download button
-import fullSeatingMap from '../assets/full-seating-chart.png'; // <-- Adjust filename to match exactly
+import fullSeatingMap from '../assets/full-seating-chart.png';  // <-- Adjust filename to match exactly
 
 const SeatingArrangement = ({ onNavigateBack }) => {
     return (
